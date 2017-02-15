@@ -37,19 +37,24 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.ConsultarEntityButton = new System.Windows.Forms.Button();
             this.AlumnosdataGridView3 = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.ConsultarMySQLButton = new System.Windows.Forms.Button();
+            this.AlumnosMySQLdataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AlumnosdataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AlumnosdataGridView2)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AlumnosdataGridView3)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AlumnosMySQLdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.ConsultarDataSetButton);
             this.groupBox1.Controls.Add(this.AlumnosdataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(40, 33);
+            this.groupBox1.Location = new System.Drawing.Point(40, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(698, 123);
             this.groupBox1.TabIndex = 0;
@@ -78,7 +83,7 @@
             // 
             this.groupBox2.Controls.Add(this.ConsultarLINQButton);
             this.groupBox2.Controls.Add(this.AlumnosdataGridView2);
-            this.groupBox2.Location = new System.Drawing.Point(40, 162);
+            this.groupBox2.Location = new System.Drawing.Point(40, 141);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(698, 123);
             this.groupBox2.TabIndex = 2;
@@ -107,7 +112,7 @@
             // 
             this.groupBox3.Controls.Add(this.ConsultarEntityButton);
             this.groupBox3.Controls.Add(this.AlumnosdataGridView3);
-            this.groupBox3.Location = new System.Drawing.Point(40, 304);
+            this.groupBox3.Location = new System.Drawing.Point(40, 270);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(698, 123);
             this.groupBox3.TabIndex = 3;
@@ -120,7 +125,7 @@
             this.ConsultarEntityButton.Name = "ConsultarEntityButton";
             this.ConsultarEntityButton.Size = new System.Drawing.Size(81, 70);
             this.ConsultarEntityButton.TabIndex = 1;
-            this.ConsultarEntityButton.Text = "consultar con Dataset";
+            this.ConsultarEntityButton.Text = "consultar con Entity Framework";
             this.ConsultarEntityButton.UseVisualStyleBackColor = true;
             this.ConsultarEntityButton.Click += new System.EventHandler(this.ConsultarEntityButton_Click);
             // 
@@ -132,11 +137,42 @@
             this.AlumnosdataGridView3.Size = new System.Drawing.Size(515, 87);
             this.AlumnosdataGridView3.TabIndex = 0;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox4.Controls.Add(this.ConsultarMySQLButton);
+            this.groupBox4.Controls.Add(this.AlumnosMySQLdataGridView);
+            this.groupBox4.Location = new System.Drawing.Point(40, 404);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(698, 123);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Conectar a MySQL con DataSet";
+            // 
+            // ConsultarMySQLButton
+            // 
+            this.ConsultarMySQLButton.Location = new System.Drawing.Point(571, 30);
+            this.ConsultarMySQLButton.Name = "ConsultarMySQLButton";
+            this.ConsultarMySQLButton.Size = new System.Drawing.Size(81, 70);
+            this.ConsultarMySQLButton.TabIndex = 1;
+            this.ConsultarMySQLButton.Text = "consultar con a MYSQL";
+            this.ConsultarMySQLButton.UseVisualStyleBackColor = true;
+            this.ConsultarMySQLButton.Click += new System.EventHandler(this.ConsultarMySQLButton_Click);
+            // 
+            // AlumnosMySQLdataGridView
+            // 
+            this.AlumnosMySQLdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AlumnosMySQLdataGridView.Location = new System.Drawing.Point(20, 30);
+            this.AlumnosMySQLdataGridView.Name = "AlumnosMySQLdataGridView";
+            this.AlumnosMySQLdataGridView.Size = new System.Drawing.Size(515, 87);
+            this.AlumnosMySQLdataGridView.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 498);
+            this.ClientSize = new System.Drawing.Size(772, 539);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -148,6 +184,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.AlumnosdataGridView2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AlumnosdataGridView3)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AlumnosMySQLdataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -163,6 +201,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button ConsultarEntityButton;
         private System.Windows.Forms.DataGridView AlumnosdataGridView3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button ConsultarMySQLButton;
+        private System.Windows.Forms.DataGridView AlumnosMySQLdataGridView;
     }
 }
 

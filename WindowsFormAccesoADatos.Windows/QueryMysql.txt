@@ -1,0 +1,4 @@
+create database EscuelaBD;
+use EscuelaBD;
+create table Alumnos(Id int primary key, Matricula varchar(10), Nombre varchar(50),Apellidos varchar(50), FechaNacimiento date,Sexo varchar(1));
+insert into Alumnos(Id,Matricula,Nombre,Apellidos,FechaNacimiento,Sexo)values(1,'1600B12345','Maria Angelica','Robles Lopez','2016-02-01','F');
